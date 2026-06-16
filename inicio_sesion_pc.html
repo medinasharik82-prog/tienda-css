@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio de sesión</title>
+    
+    <style>
+        /*Zona de estilos*/
+
+        /*sección de selectores tipo TAG*/
+
+        div{
+            display: block ;
+        }   
+        label{
+            display: block;
+            
+        }
+
+        input {
+            width: 100%;
+            box-sizing: border-box;
+            padding: 8px 10px;
+            margin-bottom: 8px;
+        }
+
+        button{
+            color: rgb(255, 255, 255);
+            border: none;
+            border-radius: 8px;
+            padding: 10px 24px;
+            cursor: pointer;
+            font-weight: 600;
+            transition: background-color 0.1s ease;
+        }
+
+        .btn-primary{
+            background-color: rgb(7, 7, 7);
+        }
+
+        .btn-primary:hover{
+            background-color: #131212;
+        }
+
+        .btn-secondary{
+            background-color:  #111111;
+        }
+
+        .btn-secondary:hover{
+            background-color: #6C757D;
+        }
+
+        .contenedor_genral{
+            background-color: #f5f3f3;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+            margin: 0 auto;
+
+        }
+
+        .contenedor_principal {
+            display: flex;
+            flex-direction: row;
+            border: 4px solid rgb(25, 22, 201);
+            border-radius: 12px;
+            width: 100%;
+            max-width: 750px;
+            background-color: #ffffff;
+            padding: 16px;
+            gap: 16px;
+        }
+
+        .columna_izquierda {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto;
+        }
+
+        .columna_derecha {
+            flex: 1;
+            background-color: #d16d0f;
+            border-radius: 8px;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        /*.banner {
+            background-color: #cccccc;
+            height: 160px;
+            border-radius: 8px;
+            border: 2px solid #999;
+        }*/
+
+        .bloque_perfil {
+            background-color: #bbbbbb;
+            border-radius: 8px;
+            padding: 50px;
+            text-align: center;
+            border: 2px solid #701bd1;
+        }
+
+
+        .titulo_texto{
+            margin: 0 auto;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .contenedor_hijo{
+            position: relative;
+            background-color: #FFFFFF;
+            width: 80%;
+            max-width: 450px;
+            margin: 0 auto;
+            margin-bottom: 3%;
+            text-align: center;
+            align-items: center;
+            align-content: center;
+            align-self: center;
+            vertical-align: middle;
+        }
+        .contenedor_boton{
+            display: flex;
+            background-color: #b87d7d00;
+            width: 80%;
+            margin: 0 auto;
+            margin-bottom: 3%;
+            text-align: center;
+            gap: 50px;
+            justify-content: center;
+
+        }
+        /*sección de selectrores de ID*/
+
+        #texto{
+            text-align: center;
+            font-family: Arial, sans-serif;
+            color: #000000;
+        }
+        #contenedor_texto{
+            color: aqua;
+            font-size: 50px;
+            text-shadow: 3px 4px 5px rgb(185, 223, 111);
+        }
+
+        #imagen_perfil{
+            position: relative;
+            height: 90px;
+            width: 90px;
+            margin: 0 auto;
+            border-radius: 50%;
+            text-align: center;
+            align-content: center;
+            border: 4px solid rgba(10, 57, 119, 0.897);
+            ;
+
+        }
+
+    </style>
+
+</head>
+<body>
+<div class="contenedor_genral">
+    <div class="contenedor_principal">
+
+    <!-- COLUMNA IZQUIERDA -->
+        <div class="columna_izquierda">
+
+            <div class="bloque_perfil", class = "banner">
+                <div id="imagen_perfil">Imagen</div>
+                <h2 class="titulo_texto">Inicio de sesión</h2>
+            </div>
+            <!-- <div class="banner"></div> -->
+
+        </div>
+
+    <!-- COLUMNA DERECHA -->
+        <div class="columna_derecha">
+            <h2 class="titulo_texto">Datos de sesión</h2>
+
+            <label>Usuario:</label>
+            <input type="text" />
+
+            <label>Clave:</label>
+            <input type="text" />
+
+            <div class="contenedor_boton">
+                <button class="btn-primary">Iniciar</button>
+                <button class="btn-secondary">Back</button>
+            </div>
+
+            <h4 id="texto">¿Olvidó su contraseña?</h4>
+        </div>
+
+    </div>
+</div>
+</body>
+</html>
